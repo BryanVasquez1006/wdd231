@@ -85,3 +85,75 @@ const courses = [
         completed: false
     }
 ]
+
+// Course Buttons
+const courseContainer = document.querySelector("#courseContainer");
+const allBtn = document.querySelector("#allBtn");
+const cseBtn = document.querySelector("#cseBtn");
+const wddBtn = document.querySelector("#wddBtn");
+
+function displayCourses(courseList) {
+    courseContainer.innerHTML = ""; // clear previous content
+
+    courseList.forEach(course => {
+        const courseEl = document.createElement("div");
+        courseEl.classList.add("course");
+
+        //adding a conditional classs and icon 
+
+        const statusClass = course.completed ? "completed" : "not-completed";
+        const statusIcon = course.completed ? "✅" : "❌";
+
+        courseEl.innerHTML = `
+        <p class="courseName ${statusClass}">${course.subject} ${course.number} ${statusIcon}</p>
+        `;
+        courseContainer.appendChild(courseEl);
+    });
+
+    //Calculating the total credits dynamically with reduce()
+
+    const totalCredits = courseList.reduce((sum, course) => sum + course.credits, 0);
+
+    const totalCreditsEl = document.querySelector("#totalCredits");
+    totalCreditsEl.textContent = `Total Credits: ${totalCredits}`;
+}
+
+allBtn.addEventListener("click", () => displayCourses(courses));
+cseBtn.addEventListener("click", () => {
+    const cseCourses = courses.filter(course => course.subject === "CSE");
+    displayCourses(cseCourses);
+});
+
+wddBtn.addEventListener("click", () => {
+    const wddCourses = courses.filter(course => course.subject === "WDD");
+    displayCourses(wddCourses);
+});
+
+// getting the dates for the dynamic footer
+
+const current = document.querySelector("#currentyear");
+
+const lastM = document.querySelector("#lastModified");
+
+let lastModif = new Date(document.lastModified);
+
+const today = new Date();
+
+lastM.innerHTML = `Last modified: ${new Intl.DateTimeFormat("en-US", {
+  dateStyle: "short",
+  timeStyle: "short"
+}).format(lastModif)}`;
+
+current.innerHTML = today.getFullYear();
+
+// Logic for wayfinding
+const navLinks = document.querySelectorAll("nav a");
+const currentPath = window.location.pathname;
+
+navLinks.forEach(link => {
+  if (link.pathname === currentPath) {
+    link.parentElement.classList.add("current");
+  } else {
+    link.parentElement.classList.remove("current");
+  }
+});

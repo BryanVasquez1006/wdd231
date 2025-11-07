@@ -24,8 +24,17 @@ header img {
 main section {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     text-align: center;
+    background-color: #ddd;
+    margin-bottom: 10px;
+}
+
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hamburger {
@@ -49,6 +58,7 @@ main section {
 nav ul {
     display: flex;
     flex-direction: column;
+    
 }
 
 main section img {
@@ -59,6 +69,7 @@ ul {
     list-style: none;
     padding-left: 0;
     margin-top: 0;
+    
 }
 
 ul li {
@@ -119,6 +130,7 @@ footer {
 .courses {
    display: flex;
    flex-direction: row;
+   justify-content: center;
    column-gap: 10px;
 }
 
@@ -127,4 +139,54 @@ footer {
     width: 8rem;
     cursor: pointer;
     border-radius: 10px;
+}
+
+.courses button:hover {
+    background-color: #ddd;
+}
+
+.courseName {
+    background-color: #ccc;
+    padding: 10px;
+    width: 12rem;
+}
+
+
+section h2 {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    margin: 0;
+}
+
+.courseCont {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}   
+
+nav ul li.current a {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+section .courses {
+    margin: 10px 10px;
+}
+
+
+/*styles for the dynamic courses that have been completed and the ones that haven't*/
+
+.courseName.completed {
+  background-color: #c8f7c5; /* light green */
+  border: 2px solid #2ecc71; /* darker green border */
+  color: #1e824c;
+}
+
+.courseName.not-completed {
+  background-color: #f9c0c0; /* light red */
+  border: 2px solid #e74c3c; /* darker red border */
+  color: #a83232;
 }
