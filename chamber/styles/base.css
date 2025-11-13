@@ -92,7 +92,7 @@ h1 {
 /* Grid container for cards */
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns:1fr;
   gap: 1.5rem;
 }
 
@@ -179,3 +179,86 @@ h1 {
 .membership.member {
   color: var(--light-yellow);
 }
+
+/* List and Grid view buttons */
+
+.view-toggle {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.view-toggle button {
+    background-color: var(--red);
+    color: var(--text-light);
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    margin: 0 0.3rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.view-toggle button:hover {
+    background-color: var(--sand);
+    color: var(--dark-blue);
+    transform: translateY(-10px);
+}
+
+.directory {
+  padding: 2rem;
+  background-color: #0B0033;
+  color: #EAF27C;
+  text-align: center;
+}
+
+.company-table {
+  width: 100%;
+  min-width: 500px;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #370031;
+  color: #EAF27C;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.company-table th {
+  background-color: #832232;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.company-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #CE8964;
+}
+
+.company-table tr:hover {
+  background-color: #CE8964;
+  color: #0B0033;
+}
+
+.company-table img {
+  width: 60px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.list-view {
+  overflow-x: auto; /* allow horizontal scroll */
+  width: 100%;
+  display: block; /* important for scroll behavior */
+  box-sizing: border-box;
+}
+
+/* optional but looks cleaner on mobile */
+.list-view::-webkit-scrollbar {
+  height: 8px;
+}
+
+.list-view::-webkit-scrollbar-thumb {
+  background-color: #832232;
+  border-radius: 4px;
+}
+
+

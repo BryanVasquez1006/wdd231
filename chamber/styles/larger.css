@@ -1,0 +1,6 @@
+@media only screen and (min-width: 38em) {
+    .cards-container {
+        grid-template-columns: auto auto auto;
+    }
+   
+}
