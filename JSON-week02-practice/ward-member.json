@@ -1,0 +1,27 @@
+{
+    "familyName": "Familia Rodriguez",
+    "wardArrivalDate": "2025-08-07",
+    "familyMemberTotal": 3,
+    "isVistedBishopric": false,
+    "individualData": {
+        "juan": {
+            "name": "Juan Rodriguez",
+            "gender": "M",
+            "birthdate": "2010-04-03"
+        },
+
+        "abraham": {
+            "name": "AbrahaR odriguez",
+            "gender": "M",
+            "birthdate": "2001-04-03"
+        },
+ 
+        "pedro": {
+            "name": "Pedro Rodriguez",
+            "gender": "M",
+            "birthdate": "2012-09-05"
+        }
+        
+    }
+    
+}
