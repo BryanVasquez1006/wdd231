@@ -1,150 +1,135 @@
 :root {
   --dark-blue: #0B0033;
   --purple: #370031;
-  --red: #832232;
+  --red: #6b1b28;
   --sand: #CE8964;
   --light-yellow: #EAF27C;
   --text-light: #f5f5f5;
 }
 
-
 header, nav, main, footer {
-    padding: 5px;
+  padding: 5px;
 }
 
 header {
-    display: grid;
-    grid-template-columns: auto auto 44px;
-    column-gap: 10px;
-    background-color: #0B0033;
-    align-items: end;
-    color: white;
+  display: grid;
+  grid-template-columns: auto auto 44px;
+  column-gap: 10px;
+  align-items: end;
+  background: var(--dark-blue);
+  color: #fff;
 }
 
-header span {
-    font-size: 1.3rem;
-}
+header span { font-size: 1.3rem; }
 
 header img {
-    display: block;
-    border-radius: 10px;
+  display: block;
+  border-radius: 10px;
 }
 
 .hamburger {
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 100%;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  width: 100%;
 }
 
 .hamburger::before {
-    content: "\2630";
-    font-size: 2.5rem;
+  content: "\2630";
+  font-size: 2.5rem;
 }
 
-.hamburger.show::before {
-    content: "\00D7";
-    font-size: 2.5rem;
-}
-
+.hamburger.show::before { content: "\00D7"; }
 
 ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 ul li {
-    background-color: #0b0033;
-    padding: 5px;
+  background: var(--dark-blue);
+  padding: 5px;
 }
 
 .navigation {
-    padding: 0;
-    display: none;
+  display: none;
+  padding: 0;
 }
 
-.navigation.show {
-    display: block;
-}
+.navigation.show { display: block; }
 
-a {
-    color: white;
-}
+a { color: #fff; }
 
 footer {
-    background-color: #0B0033;
-    padding: 1rem 10px;
-    text-align: center;
-    color: white;
+  background: var(--dark-blue);
+  padding: 1rem 10px;
+  text-align: center;
+  color: #fff;
+  min-height: 40px;
 }
-
 
 h1 {
   text-align: center;
   color: var(--light-yellow);
   margin-bottom: 2rem;
   text-shadow: 0 0 10px var(--purple);
+  background: var(--red);
+  padding: 10px;
 }
 
-/* Grid container for cards */
 .cards-container {
   display: grid;
-  grid-template-columns:1fr;
+  grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 
-/* Individual card style */
 .company-card {
-  background-color: var(--purple);
+  background: var(--purple);
   border: 2px solid var(--sand);
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0,0,0,.3);
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform .2s, box-shadow .2s;
 }
 
 .company-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 6px 14px rgba(0,0,0,.4);
 }
 
-/* Company image */
 .company-card img {
   width: 100px;
   height: 100px;
   object-fit: contain;
   border-radius: 50%;
   border: 3px solid var(--light-yellow);
-  background-color: white;
+  background: #fff;
   margin-bottom: 1rem;
 }
 
-/* Company name */
 .company-card h2 {
   color: var(--light-yellow);
   font-size: 1.3rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
   text-align: center;
 }
 
-/* Description text */
 .company-card p {
-  color: var(--sand);
+  color: #fff;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: .9rem;
   margin-bottom: 1rem;
 }
 
-/* Contact info */
 .company-info {
-  background-color: var(--red);
-  padding: 0.8rem;
+  background: var(--red);
+  padding: .8rem;
   border-radius: 10px;
   color: var(--text-light);
   text-align: center;
@@ -153,62 +138,48 @@ h1 {
 
 .company-info a {
   color: var(--light-yellow);
+  font-weight: 700;
   text-decoration: none;
-  font-weight: bold;
 }
 
-.company-info a:hover {
-  text-decoration: underline;
-}
+.company-info a:hover { text-decoration: underline; }
 
-/* Membership levels */
 .membership {
-  margin-top: 0.8rem;
-  font-weight: bold;
+  margin-top: .8rem;
+  font-weight: 700;
   color: var(--light-yellow);
 }
 
-.membership.gold {
-  color: gold;
-}
-
-.membership.silver {
-  color: silver;
-}
-
-.membership.member {
-  color: var(--light-yellow);
-}
-
-/* List and Grid view buttons */
+.membership.gold { color: gold; }
+.membership.silver { color: silver; }
 
 .view-toggle {
-    text-align: center;
-    margin-bottom: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .view-toggle button {
-    background-color: var(--red);
-    color: var(--text-light);
-    border: none;
-    padding: 0.6rem 1.2rem;
-    border-radius: 8px;
-    margin: 0 0.3rem;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.2s, transform 0.2s;
+  background: var(--red);
+  color: var(--text-light);
+  border: none;
+  padding: .6rem 1.2rem;
+  border-radius: 8px;
+  margin: 0 .3rem;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background .2s, transform .2s;
 }
 
 .view-toggle button:hover {
-    background-color: var(--sand);
-    color: var(--dark-blue);
-    transform: translateY(-10px);
+  background: var(--sand);
+  color: var(--dark-blue);
+  transform: translateY(-10px);
 }
 
 .directory {
   padding: 2rem;
-  background-color: #0B0033;
-  color: #EAF27C;
+  background: var(--dark-blue);
+  color: var(--light-yellow);
   text-align: center;
 }
 
@@ -217,25 +188,25 @@ h1 {
   min-width: 500px;
   border-collapse: collapse;
   margin-top: 1rem;
-  background-color: #370031;
-  color: #EAF27C;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  background: var(--purple);
+  color: var(--light-yellow);
+  box-shadow: 0 0 15px rgba(0,0,0,.4);
 }
 
 .company-table th {
-  background-color: #832232;
+  background: #832232;
   padding: 1rem;
   text-transform: uppercase;
 }
 
 .company-table td {
-  padding: 0.75rem;
-  border-bottom: 1px solid #CE8964;
+  padding: .75rem;
+  border-bottom: 1px solid var(--sand);
 }
 
 .company-table tr:hover {
-  background-color: #CE8964;
-  color: #0B0033;
+  background: var(--sand);
+  color: var(--dark-blue);
 }
 
 .company-table img {
@@ -245,20 +216,21 @@ h1 {
 }
 
 .list-view {
-  overflow-x: auto; /* allow horizontal scroll */
+  overflow-x: auto;
   width: 100%;
-  display: block; /* important for scroll behavior */
+  display: block;
   box-sizing: border-box;
 }
 
-/* optional but looks cleaner on mobile */
 .list-view::-webkit-scrollbar {
   height: 8px;
 }
 
 .list-view::-webkit-scrollbar-thumb {
-  background-color: #832232;
+  background: #832232;
   border-radius: 4px;
 }
 
-
+.social a {
+    margin-right: 20px;
+}

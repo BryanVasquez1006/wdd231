@@ -5,7 +5,7 @@
       "address": "Avenida Las Magnolias #234, San Salvador, El Salvador",
       "phone": "+503 2245-7788",
       "website": "https://www.technova.com.sv",
-      "image": "images/technova.png",
+      "image": "images/technova.webp",
       "membershipLevel": 3,
       "description": "Innovative software development and IT consulting firm helping businesses modernize their digital presence."
     },
@@ -14,7 +14,7 @@
       "address": "Calle Real #55, Santa Tecla, La Libertad",
       "phone": "+503 2211-4433",
       "website": "https://www.cafeelvolcan.com",
-      "image": "images/cafevolcan.png",
+      "image": "images/cafevolcan.webp",
       "membershipLevel": 2,
       "description": "Family-owned coffee company specializing in high-quality Salvadoran coffee beans sourced from volcanic soil."
     },
@@ -23,7 +23,7 @@
       "address": "Boulevard Constitución #678, San Salvador",
       "phone": "+503 2250-9012",
       "website": "https://www.pacificauto.com.sv",
-      "image": "images/pacificauto.png",
+      "image": "images/pacificauto.webp",
       "membershipLevel": 1,
       "description": "Authorized dealership providing new and used cars, maintenance services, and auto financing options."
     },
@@ -32,7 +32,7 @@
       "address": "Colonia Escalón, Pasaje Los Pinos #15, San Salvador",
       "phone": "+503 2263-1199",
       "website": "https://www.greenleafsv.com",
-      "image": "images/greenleafsv.png",
+      "image": "images/greenleafsv.webp",
       "membershipLevel": 2,
       "description": "Professional landscaping and garden design services focused on sustainable and eco-friendly practices."
     },
@@ -41,7 +41,7 @@
       "address": "Km 7 ½ Carretera a Santa Ana, San Juan Opico, La Libertad",
       "phone": "+503 2225-8899",
       "website": "https://www.solarbright.com",
-      "image": "images/solarbright.png",
+      "image": "images/solarbright.webp",
       "membershipLevel": 3,
       "description": "Leading renewable energy provider offering solar panel installations and energy optimization for businesses."
     },
@@ -50,7 +50,7 @@
       "address": "6a Avenida Norte #22, Suchitoto, Cuscatlán",
       "phone": "+503 2333-7788",
       "website": "https://www.tropicaladventures.com",
-      "image": "images/tropicaladventures.png",
+      "image": "images/tropicaladventures.webp",
       "membershipLevel": 1,
       "description": "Tour operator offering hiking, kayaking, and cultural experiences across El Salvador’s natural beauty."
     },
@@ -59,7 +59,7 @@
       "address": "Centro Comercial La Gran Vía, San Salvador",
       "phone": "+503 2299-4422",
       "website": "https://www.vidafitgym.com",
-      "image": "images/vidafit.png",
+      "image": "images/vidafit.webp",
       "membershipLevel": 2,
       "description": "Modern fitness center with top equipment, certified trainers, and personalized nutrition programs."
     }

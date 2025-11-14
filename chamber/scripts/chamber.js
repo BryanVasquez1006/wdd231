@@ -25,10 +25,17 @@ lastM.innerHTML = `Last modified: ${new Intl.DateTimeFormat("en-US", {
 current.innerHTML = today.getFullYear();
 
 // Reading the JSON file
+let companyData = [];
+
 async function loadCompanies() {
-  const response = await fetch("data/members.json");
-  const data = await response.json();
-  displayCompanies(data.companies, "grid"); // default to grid view
+  try {
+      const response = await fetch("data/members.json");
+      const data = await response.json();
+      companyData = data.companies;
+      displayCompanies(companyData, "grid");
+  } catch (error) {
+    console.log(error)
+  }  
 }
 
 function displayCompanies(companies, viewType) {
@@ -45,7 +52,7 @@ function displayCompanies(companies, viewType) {
         company.membershipLevel === 2 ? "silver" : "member";
 
       card.innerHTML = `
-        <img src="${company.image}" alt="${company.name} logo">
+        <img src="${company.image}" alt="${company.name} logo" loading="lazy">
         <h2>${company.name}</h2>
         <p>${company.description}</p>
         <div class="company-info">
@@ -84,7 +91,7 @@ function displayCompanies(companies, viewType) {
       <tbody>
         ${companies.map(company => `
           <tr>
-            <td><img src="${company.image}" alt="${company.name} logo" width="60"></td>
+            <td><img src="${company.image}" alt="${company.name} logo" width="60" loading="lazy"></td>
             <td>${company.name}</td>
             <td>${company.address}</td>
             <td>${company.phone}</td>
@@ -103,15 +110,9 @@ function displayCompanies(companies, viewType) {
 }
 
 // Toggle buttons
-gridBtn.addEventListener("click", () => {
-  loadCompanies(); // reload as grid
-});
+gridBtn.addEventListener("click", () => displayCompanies(companyData, "grid"));
+listBtn.addEventListener("click", () => displayCompanies(companyData, "list"));
 
-listBtn.addEventListener("click", async () => {
-  const response = await fetch("data/members.json");
-  const data = await response.json();
-  displayCompanies(data.companies, "list");
-});
 
 // Load default view
 loadCompanies();
