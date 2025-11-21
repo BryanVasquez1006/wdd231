@@ -36,16 +36,16 @@ header img {
   width: 100%;
 }
 
-.joinButton {
-  display: none;
-}
-
 .hamburger::before {
   content: "\2630";
   font-size: 2.5rem;
 }
 
 .hamburger.show::before { content: "\00D7"; }
+
+.joinButton {
+  display: none;
+}
 
 ul {
   list-style: none;
@@ -88,8 +88,8 @@ h2 {
   color: var(--red);
   width: max-content;
   padding: 15px;
-
 }
+
 .cards-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -242,24 +242,24 @@ h2 {
 }
 
 .social a {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 
 /*Styles for the HOME page*/
 
 img.hero {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  overflow-x: hidden;
 }
 
 
-
 /* CARD */
+
 .bizCard-container {
   background: var(--purple);
   color: var(--text-light);
@@ -269,12 +269,13 @@ img.hero {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   padding: 1.5rem;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
   gap: 0.7rem;
   border: 2px solid var(--sand);
 }
 
 /* DECORATIVE LINE ON CARDS */
+
 .bizCard-container span {
   display: block;
   height: 3px;
@@ -285,6 +286,7 @@ img.hero {
 }
 
 /* TITLE */
+
 .bizCard-container h2 {
   font-size: 1.4rem;
   color: var(--light-yellow);
@@ -292,6 +294,7 @@ img.hero {
 }
 
 /* TEXT */
+
 .bizCard-container p {
   margin: 0;
   font-size: 0.95rem;
@@ -300,9 +303,8 @@ img.hero {
 .biz-card-img {
   width: 100%;
   height: auto;
-  border-radius: 0 0 16px 16px; 
+  border-radius: 0 0 16px 16px;
   margin-top: -10px;
-  
 }
 
 .business-cards {
@@ -312,9 +314,7 @@ img.hero {
   justify-content: center;
   align-content: center;
   gap: 10px;
-
 }
-
 
 
 /* ==========================
@@ -331,6 +331,7 @@ section {
   box-shadow: 0 6px 14px rgba(0,0,0,0.3);
 }
 
+
 /* ==========================
    HERO IMAGE SECTION
 ========================== */
@@ -343,11 +344,12 @@ section {
   display: block;
 }
 
+
 /* ==========================
    HEADERS (H2, H3)
 ========================== */
 
-h2 {
+main h2 {
   font-size: 2rem;
   color: var(--red);
   text-align: center;
@@ -362,6 +364,7 @@ h3 {
   border-left: 5px solid var(--sand);
   padding-left: 0.7rem;
 }
+
 
 /* ==========================
    CURRENT WEATHER
@@ -387,6 +390,7 @@ h3 {
   color: var(--text-light);
 }
 
+
 /* ==========================
    WEATHER FORECAST BOX
 ========================== */
@@ -406,6 +410,7 @@ h3 {
   font-size: 1rem;
 }
 
+
 /* ==========================
    SPACING FIX FOR LOOSE H3s
 ========================== */
@@ -413,5 +418,3 @@ h3 {
 section + h3 {
   margin-top: 2rem;
 }
-
-
