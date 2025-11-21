@@ -7,7 +7,8 @@
       "website": "https://www.technova.com.sv",
       "image": "images/technova.webp",
       "membershipLevel": 3,
-      "description": "Innovative software development and IT consulting firm helping businesses modernize their digital presence."
+      "description": "Innovative software development and IT consulting firm helping businesses modernize their digital presence.",
+      "email": "contact@technova.com.sv"
     },
     {
       "name": "Café El Volcán",
@@ -16,7 +17,8 @@
       "website": "https://www.cafeelvolcan.com",
       "image": "images/cafevolcan.webp",
       "membershipLevel": 2,
-      "description": "Family-owned coffee company specializing in high-quality Salvadoran coffee beans sourced from volcanic soil."
+      "description": "Family-owned coffee company specializing in high-quality Salvadoran coffee beans sourced from volcanic soil.",
+      "email": "info@cafeelvolcan.com"
     },
     {
       "name": "Pacific Auto Center",
@@ -25,7 +27,8 @@
       "website": "https://www.pacificauto.com.sv",
       "image": "images/pacificauto.webp",
       "membershipLevel": 1,
-      "description": "Authorized dealership providing new and used cars, maintenance services, and auto financing options."
+      "description": "Authorized dealership providing new and used cars, maintenance services, and auto financing options.",
+      "email": "sales@pacificauto.com.sv"
     },
     {
       "name": "GreenLeaf Landscaping",
@@ -34,7 +37,8 @@
       "website": "https://www.greenleafsv.com",
       "image": "images/greenleafsv.webp",
       "membershipLevel": 2,
-      "description": "Professional landscaping and garden design services focused on sustainable and eco-friendly practices."
+      "description": "Professional landscaping and garden design services focused on sustainable and eco-friendly practices.",
+      "email": "support@greenleafsv.com"
     },
     {
       "name": "SolarBright Energy",
@@ -43,7 +47,8 @@
       "website": "https://www.solarbright.com",
       "image": "images/solarbright.webp",
       "membershipLevel": 3,
-      "description": "Leading renewable energy provider offering solar panel installations and energy optimization for businesses."
+      "description": "Leading renewable energy provider offering solar panel installations and energy optimization for businesses.",
+      "email": "info@solarbright.com"
     },
     {
       "name": "Tropical Adventures Tours",
@@ -52,7 +57,8 @@
       "website": "https://www.tropicaladventures.com",
       "image": "images/tropicaladventures.webp",
       "membershipLevel": 1,
-      "description": "Tour operator offering hiking, kayaking, and cultural experiences across El Salvador’s natural beauty."
+      "description": "Tour operator offering hiking, kayaking, and cultural experiences across El Salvador’s natural beauty.",
+      "email": "hello@tropicaladventures.com"
     },
     {
       "name": "VidaFit Gym",
@@ -61,7 +67,8 @@
       "website": "https://www.vidafitgym.com",
       "image": "images/vidafit.webp",
       "membershipLevel": 2,
-      "description": "Modern fitness center with top equipment, certified trainers, and personalized nutrition programs."
+      "description": "Modern fitness center with top equipment, certified trainers, and personalized nutrition programs.",
+      "email": "contact@vidafitgym.com"
     }
   ]
 }

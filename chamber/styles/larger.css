@@ -1,6 +1,76 @@
 @media only screen and (min-width: 38em) {
-    .cards-container {
+
+        :root {
+      --dark-blue: #0B0033;
+      --purple: #370031;
+      --red: #6b1b28;
+      --sand: #CE8964;
+      --light-yellow: #EAF27C;
+      --text-light: #f5f5f5;
+    }
+    .bizCard-container {
         grid-template-columns: auto auto auto;
     }
+
+    .weatherContainer {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    .business-cards {
+        flex-direction: row;
+    }
+
+    .footerContainer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    header {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    align-items: end;
+    background: var(--dark-blue);
+    color: #fff;
+    }
+
+        .joinButton {
+        display: inline-block;
+        padding: 0.6rem 1.2rem;
+        margin: 0.5rem 1rem;
+        background: var(--purple);
+        color: var(--text-light);
+        font-weight: 600;
+        border-radius: 12px;
+        text-decoration: none;
+        transition: all 0.25s ease;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+        border: 2px solid transparent;
+        cursor: pointer;
+    }
+
+    /* Hover */
+    .joinButton:hover {
+        background: var(--red);
+        border-color: var(--sand);
+        box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+        transform: translateY(-2px);
+    }
+
+    /* Active (optional) */
+    .joinButton:active {
+        transform: scale(0.97);
+    }
+
+
+    
+
    
 }

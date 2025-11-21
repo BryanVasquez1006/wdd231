@@ -36,6 +36,10 @@ header img {
   width: 100%;
 }
 
+.joinButton {
+  display: none;
+}
+
 .hamburger::before {
   content: "\2630";
   font-size: 2.5rem;
@@ -80,6 +84,12 @@ h1 {
   padding: 10px;
 }
 
+h2 {
+  color: var(--red);
+  width: max-content;
+  padding: 15px;
+
+}
 .cards-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -234,3 +244,174 @@ h1 {
 .social a {
     margin-right: 20px;
 }
+
+
+/*Styles for the HOME page*/
+
+img.hero {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    overflow-x: hidden;
+}
+
+
+
+/* CARD */
+.bizCard-container {
+  background: var(--purple);
+  color: var(--text-light);
+  border-radius: 16px;
+  display: grid;
+  width: 90%;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 1.5rem;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  gap: 0.7rem;
+  border: 2px solid var(--sand);
+}
+
+/* DECORATIVE LINE ON CARDS */
+.bizCard-container span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: var(--light-yellow);
+  margin: 0.3rem 0 0.7rem;
+  border-radius: 2px;
+}
+
+/* TITLE */
+.bizCard-container h2 {
+  font-size: 1.4rem;
+  color: var(--light-yellow);
+  margin: 0;
+}
+
+/* TEXT */
+.bizCard-container p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.biz-card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 16px 16px; 
+  margin-top: -10px;
+  
+}
+
+.business-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+
+}
+
+
+
+/* ==========================
+   GENERAL PAGE STYLES
+========================== */
+
+section {
+  background: var(--dark-blue);
+  padding: 2rem;
+  margin: 1.5rem 0;
+  border-radius: 16px;
+  border: 2px solid var(--purple);
+  color: var(--text-light);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+/* ==========================
+   HERO IMAGE SECTION
+========================== */
+
+.hero {
+  width: 100%;
+  border-radius: 16px;
+  border: 3px solid var(--red);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.35);
+  display: block;
+}
+
+/* ==========================
+   HEADERS (H2, H3)
+========================== */
+
+h2 {
+  font-size: 2rem;
+  color: var(--red);
+  text-align: center;
+  margin-top: 2.5rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--sand);
+  border-left: 5px solid var(--sand);
+  padding-left: 0.7rem;
+}
+
+/* ==========================
+   CURRENT WEATHER
+========================== */
+
+#current-weather {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--purple);
+  border-radius: 12px;
+  padding: 1rem;
+  border: 2px solid var(--sand);
+}
+
+#weather-icon {
+  width: 80px;
+  height: 80px;
+}
+
+#weather-info p {
+  margin: 0.2rem 0;
+  color: var(--text-light);
+}
+
+/* ==========================
+   WEATHER FORECAST BOX
+========================== */
+
+#weather-forecast {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--purple);
+  border: 2px solid var(--sand);
+  border-radius: 12px;
+  color: var(--text-light);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.35);
+}
+
+#weather-forecast p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+}
+
+/* ==========================
+   SPACING FIX FOR LOOSE H3s
+========================== */
+
+section + h3 {
+  margin-top: 2rem;
+}
+
+
