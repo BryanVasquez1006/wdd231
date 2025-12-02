@@ -49,155 +49,158 @@
       </ul>
     </nav>
 
-    <main class="joinMain">
-        <h1>Let's get in touch!</h1>
-      <form action="thankyou.html" method="get">
-        <label for="fName">
-          First Name
-          <input
-            type="text"
-            id="fName"
-            name="fName"
-            required
-            autocomplete="given-name"
-            title="Type applicant's first name"
-          />
-        </label>
+    <main>
+      <h1>Let's get in touch!</h1>
+      <div class="joinMain">
+        <form action="thankyou.html" method="get">
+          <label for="fName">
+            First Name
+            <input
+              type="text"
+              id="fName"
+              name="fName"
+              required
+              autocomplete="given-name"
+              title="Type applicant's first name"
+            />
+          </label>
 
-        <label for="lName">
-          Last Name
-          <input
-            type="text"
-            name="lName"
-            id="lName"
-            required
-            autocomplete="family-name"
-            title="Type applicant's last name"
-          />
-        </label>
+          <label for="lName">
+            Last Name
+            <input
+              type="text"
+              name="lName"
+              id="lName"
+              required
+              autocomplete="family-name"
+              title="Type applicant's last name"
+            />
+          </label>
 
-        <label for="orgTitle">
-          Organizational Title
-          <input
-            type="text"
-            name="orgTitle"
-            id="orgTitle"
-            required
-            autocomplete="organization-title"
-            pattern="^[A-Za-z\- ]{7,}$"
-            title="Minimum 7 characters. Only letters, hyphens, and spaces."
-          />
-        </label>
+          <label for="orgTitle">
+            Organizational Title
+            <input
+              type="text"
+              name="orgTitle"
+              id="orgTitle"
+              required
+              autocomplete="organization-title"
+              pattern="^[A-Za-z\- ]{7,}$"
+              title="Minimum 7 characters. Only letters, hyphens, and spaces."
+            />
+          </label>
 
-        <label for="email">
-          Email
-          <input
-            type="email"
-            required
-            name="uEmail"
-            id="email"
-            title="email address"
-            autocomplete="email"
-            placeholder="jhon123@myemail.com"
-          />
-        </label>
+          <label for="email">
+            Email
+            <input
+              type="email"
+              required
+              name="uEmail"
+              id="email"
+              title="email address"
+              autocomplete="email"
+              placeholder="jhon123@myemail.com"
+            />
+          </label>
 
-        <label for="pNumber">
-          Phone Number
-          <input
-            type="tel"
-            required
-            name="phone"
-            id="phone"
-            autocomplete="tel"
-            title="Type applicant's phone number"
-          />
-        </label>
+          <label for="phone">
+            Phone Number
+            <input
+              type="tel"
+              required
+              name="phone"
+              id="phone"
+              autocomplete="tel"
+              title="Type applicant's phone number"
+            />
+          </label>
 
-        <label for="orgName">
-          Organization Name
-          <input
-            type="text"
-            required
-            name="orgName"
-            id="orgName"
-            title="Add the title of your organization"
-            autocomplete="organization"
-          />
-        </label>
+          <label for="orgName">
+            Organization Name
+            <input
+              type="text"
+              required
+              name="orgName"
+              id="orgName"
+              title="Add the title of your organization"
+              autocomplete="organization"
+            />
+          </label>
 
-        <!--Membership selection area-->
-        <label class="radio-group">
-          Membership Level
-          <label>
+          <!--Membership selection area-->
+          <div class="radio-group">
+            <span>Membership Level</span>
+
+            <label>
               <input type="radio" name="membership" value="NP" />
-            NP 
-          </label>
+              NP
+            </label>
 
-          <label>
+            <label>
               <input type="radio" name="membership" value="bronze" />
-            Bronze 
-
-            <label>
-                <input type="radio" name="membership" value="silver" />
-              Silver 
+              Bronze
             </label>
 
             <label>
-                <input type="radio" name="membership" value="gold" />
-              Gold 
+              <input type="radio" name="membership" value="silver" />
+              Silver
             </label>
+
+            <label>
+              <input type="radio" name="membership" value="gold" />
+              Gold
+            </label>
+          </div>
+
+          <label for="description">
+            Business Description
+            <textarea
+              name="description"
+              id="description"
+              title="Describe your business"
+            ></textarea>
           </label>
-        </label>
 
-        <label for="description">
-          Business Description
-          <textarea
-            name="description"
-            id="description"
-            title="Describe your business"
-          ></textarea>
-        </label>
+          <input type="hidden" id="timestamp" name="timestamp" />
 
-        <input type="hidden" id="timestamp" name="timestamp" />
+          <input type="submit" value="Send Application" />
+        </form>
 
-        <input type="submit" value="Send Application" />
-      </form>
-
-      <section class="joinCards">
-        <article>
+        <section class="joinCards">
+          <article>
             <h2>Non-Profit Membershipt Level</h2>
             <button class="learnMoreBtn" data-level="NP">Learn More</button>
             <dialog class="joinDialog">
-                <button class="closeModal">❌</button>
-                <div class="membershipDetails"></div>
+              <button class="closeModal">❌</button>
+              <div class="membershipDetails"></div>
             </dialog>
-        </article>
-        <article>
+          </article>
+          <article>
             <h2>Bronze Membership Level</h2>
             <button class="learnMoreBtn" data-level="Bronze">Learn More</button>
             <dialog class="joinDialog">
-                <button class="closeModal">❌</button>
-                <div class="membershipDetails"></div>
+              <button class="closeModal">❌</button>
+              <div class="membershipDetails"></div>
             </dialog>
-        </article>
-        <article>
+          </article>
+          <article>
             <h2>Silver Membership Level</h2>
             <button class="learnMoreBtn" data-level="Silver">Learn More</button>
             <dialog class="joinDialog">
-                <button class="closeModal">❌</button>
-                <div class="membershipDetails"></div>
+              <button class="closeModal">❌</button>
+              <div class="membershipDetails"></div>
             </dialog>
-        </article>
-        <article>
+          </article>
+          <article>
             <h2>Gold Membership Level</h2>
             <button class="learnMoreBtn" data-level="Gold">Learn More</button>
             <dialog class="joinDialog">
-                <button class="closeModal">❌</button>
-                <div class="membershipDetails"></div>
+              <button class="closeModal">❌</button>
+              <div class="membershipDetails"></div>
             </dialog>
-        </article>
-      </section>
+          </article>
+        </section>
+      </div>
     </main>
 
     <footer>

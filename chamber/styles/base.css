@@ -439,6 +439,8 @@ form {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
+
+
 form label {
   display: flex;
   flex-direction: column;
@@ -491,7 +493,7 @@ form .radio-group {
   border-radius: 0.5rem;
 }
 
-form .radio-group label {
+form .radio-group div {
   display: flex;             
   flex-direction: row;        
   align-items: center;
