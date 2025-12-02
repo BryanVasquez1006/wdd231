@@ -1,5 +1,10 @@
 
 export function initChamber() {
+  const companiesSection = document.querySelector(".companiesSection");
+  if (!companiesSection) return; // stop running on pages that don't need it
+
+  loadCompanies();
+
   const hamBtn = document.querySelector('#ham-btn');
   const navBar = document.querySelector('#nav-bar');
   const gridBtn = document.querySelector("#gridView");

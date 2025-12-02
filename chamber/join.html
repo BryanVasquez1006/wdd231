@@ -29,7 +29,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>WFSociety || Join</title>
+    <title>Join</title>
     <script src="scripts/join.mjs" type="module"></script>
   </head>
   <body>
@@ -50,6 +50,7 @@
     </nav>
 
     <main class="joinMain">
+        <h1>Let's get in touch!</h1>
       <form action="thankyou.html" method="get">
         <label for="fName">
           First Name
@@ -59,6 +60,7 @@
             name="fName"
             required
             autocomplete="given-name"
+            title="Type applicant's first name"
           />
         </label>
 
@@ -70,6 +72,7 @@
             id="lName"
             required
             autocomplete="family-name"
+            title="Type applicant's last name"
           />
         </label>
 
@@ -107,6 +110,7 @@
             name="phone"
             id="phone"
             autocomplete="tel"
+            title="Type applicant's phone number"
           />
         </label>
 
@@ -127,21 +131,21 @@
           Membership Level
           <label>
               <input type="radio" name="membership" value="NP" />
-            NP (Non-Profit organizations)
+            NP 
           </label>
 
           <label>
               <input type="radio" name="membership" value="bronze" />
-            Bronze Membership
+            Bronze 
 
             <label>
                 <input type="radio" name="membership" value="silver" />
-              Silver Membership
+              Silver 
             </label>
 
             <label>
                 <input type="radio" name="membership" value="gold" />
-              Gold Membership
+              Gold 
             </label>
           </label>
         </label>
