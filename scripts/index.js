@@ -107,8 +107,15 @@ function displayCourses(courseList) {
         courseEl.innerHTML = `
         <p class="courseName ${statusClass}">${course.subject} ${course.number} ${statusIcon}</p>
         `;
+        
+        //showing modal if the course button is clicked:
+        courseEl.addEventListener("click", () => {
+            displayCourseInfo(course);
+        })
+
         courseContainer.appendChild(courseEl);
     });
+
 
     //Calculating the total credits dynamically with reduce()
 
@@ -157,3 +164,29 @@ navLinks.forEach(link => {
     link.parentElement.classList.remove("current");
   }
 });
+
+// LOGIC FOR MODALS
+
+const modal = document.querySelector('#courseInfoModal');
+const closeModalBtn = document.querySelector('#closeModal');
+const modalContent = document.querySelector('#courseDetails');
+
+
+closeModalBtn.addEventListener("click", () => modal.close());
+
+function displayCourseInfo(info) {
+
+        modalContent.innerHTML = `
+                <h2>${info.subject}</h2>
+                <p>${info.credits}</p>
+                <p>Certificate: ${info.title} credits</p>
+                <p>${info.description}</p>
+                <p>Technologies: ${info.technology}.</p>
+                `;
+        modal.showModal();
+};
+
+
+
+
+

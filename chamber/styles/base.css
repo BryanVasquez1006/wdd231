@@ -49,6 +49,7 @@ header img {
 
 .joinButton {
   display: none;
+  text-align: center;
 }
 
 ul {
@@ -421,4 +422,233 @@ h3 {
 
 section + h3 {
   margin-top: 2rem;
+}
+
+
+
+/*STYLES FOR THE JOIN FORM*/
+form {
+  background: var(--dark-blue);
+  color: var(--text-light);
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  display: grid;
+  gap: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  gap: 0.5rem;
+  color: var(--light-yellow);
+}
+
+/* Inputs and textarea */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  padding: 0.8rem 1rem;
+  background: var(--purple);
+  color: var(--text-light);
+  border: 2px solid var(--sand);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+form input[type="text"]::placeholder,
+form input[type="email"]::placeholder {
+  color: #e0e0e0aa;
+}
+
+/* Focus effect */
+form input:focus,
+form textarea:focus {
+  border-color: var(--light-yellow);
+  background: #42003d;
+  
+}
+
+/* Textarea size */
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Radio groups */
+form .radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  background: var(--purple);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+form .radio-group label {
+  display: flex;             
+  flex-direction: row;        
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-light);
+  font-weight: normal;
+}
+
+/* Submit button */
+form input[type="submit"] {
+  background: var(--sand);
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--dark-blue);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background: var(--light-yellow);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/*STYLES FOR CARDS IN THE JOIN PAGE*/
+
+.joinCards {
+  background-color: white;
+  border: none;
+  box-shadow: none;
+
+  animation: fadeIn 0.6s ease-out;
+}
+
+.joinCards article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #370031;
+  padding: 5px 5px 5px 5px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px  rgba(0, 0, 0, 0.632) ;
+}
+
+.joinCards h2 {
+  color:#eaf27ce4;
+  font-size: 25px;
+}
+
+.learnMoreBtn {
+  padding: 15px;
+  margin: 20px;
+  border-radius: 20px;
+  width: 15rem;
+  border: #0B0033;
+  background-color:#CE8964;
+  cursor: pointer;
+  color: var(--dark-blue);
+}
+.learnMoreBtn:hover {
+  background: var(--light-yellow);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+/*Membership modal*/
+
+.joinDialog {
+  border: none;
+}
+
+.joinDialog li {
+  background-color: white;
+}
+
+.joinDialog h2 {
+  background-color: #370031;
+  border-radius: 10px;
+}
+
+.closeModal {
+  background-color: white;
+  border: none;
+  font-size: 25px;
+  position: relative;
+  left: 90%;
+  cursor: pointer;
+}
+
+/* Thank You Page Layout */
+.thankyouPage {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--dark-blue);
+  padding: 2rem;
+}
+
+/* Thank You Card */
+.thankyouCard {
+  background: var(--purple);
+  color: var(--text-light);
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+  border: 2px solid var(--sand);
+  animation: fadeIn 0.6s ease-out;
+}
+
+.thankyouCard h1 {
+  color: var(--light-yellow);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.thankyouCard p {
+  margin: 0.7rem 0;
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+/* Back button */
+.backBtn {
+  display: inline-block;
+  margin-top: 2rem;
+  background: var(--sand);
+  color: var(--dark-blue);
+  padding: 0.8rem 1.4rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.backBtn:hover {
+  background: var(--light-yellow);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

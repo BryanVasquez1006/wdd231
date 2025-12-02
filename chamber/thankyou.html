@@ -23,11 +23,14 @@
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
     <link rel="icon" href="./images/commerce-chamber.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>WFSociety</title>
-    <script src="scripts/index.mjs" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>WFSociety || Join</title>
+    <script src="scripts/join.mjs" type="module"></script>
   </head>
   <body>
     <header>
@@ -46,47 +49,14 @@
       </ul>
     </nav>
 
-    <main>
-      <h1>San Salvador, Chamber of Commerce</h1>
-      <section>
-        <img
-          src="./images/hero.webp"
-          alt="A member of the chamber of commerce"
-          loading="lazy"
-          class="hero"
-        />
-      </section>
-      <h2>Home</h2>
+    <main class="thankyouPage">
+      <div class="thankyouCard">
+        <h1>Thank You!</h1>
+        <p>Your application has been successfully submitted.</p>
+        <p>We will review your information and get back to you soon.</p>
 
-      <div class="weatherContainer">
-        <section>
-          <h3>Events</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit perspiciatis nihil sint voluptas architecto,
-            voluptates consequatur. Vero, atque quos ratione sunt delectus ea
-            debitis cumque necessitatibus nam. Non, error? Fuga in vel dicta
-            incidunt aut aperiam cumque ipsum quibusdam, earum aliquam nihil et
-            quisquam est corporis. Sit sequi dolorem pariatur.
-          </p>
-        </section>
-
-        <section>
-          <h3>Current Weather</h3>
-          <div id="current-weather">
-            <img src="#" alt="#" id="weather-icon" />
-            <div id="weather-info"></div>
-            <!--Weather info here-->
-          </div>
-        </section>
-        <section>
-          <h3>Weather Forecast</h3>
-          <div id="weather-forecast"></div>
-        </section>
+        <a href="index.html" class="backBtn">Return to Home</a>
       </div>
-      <section class="business-cards" id="biz-cards">
-        <!--cards here-->
-      </section>
     </main>
 
     <footer>

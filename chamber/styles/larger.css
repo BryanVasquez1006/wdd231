@@ -69,6 +69,26 @@
         transform: scale(0.97);
     }
 
+    .joinMain {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .joinDialog {
+        border-radius: 5px;
+    }
+
+    .joinDialog::backdrop {
+        backdrop-filter: blur(5px);
+    }
+
+    form {
+        width: 75%;
+    }
+
+
+
+
 
     
 

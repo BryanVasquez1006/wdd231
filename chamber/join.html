@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Commerce Chamber Home Page" />
+    <meta name="author" content="Bryan Vasquez" />
+    <meta
+      name="description"
+      content="San Salvador Chamber of Commerce | Business Resources & Community Growth"
+    />
+    <meta
+      property="og:title"
+      content="San Salvador Chamber of Commerce | Business Resources & Community Growth"
+    />
+    <meta
+      property="og:description"
+      content="We empower San Salvador’s business community with resources, connections, and programs to help companies thrive and grow. Join us today."
+    />
+    <meta property="og:image" content="./images/wfsociety-social.webp" />
+    <meta property="og:url" content="" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="icon" href="./images/commerce-chamber.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>WFSociety || Join</title>
+    <script src="scripts/join.mjs" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <img src="./images/wfsociety.jpg" width="80" alt="Logo" />
+      <span>WFSociety Chamber Ecommerce</span>
+
+      <button aria-label="Mobile Menu" id="ham-btn" class="hamburger"></button>
+      <a aria-label="Join" class="joinButton" href="./join.html">Join Now</a>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="chamber.html">Directory</a></li>
+        <li><a href="final.html">Another Page</a></li>
+      </ul>
+    </nav>
+
+    <main class="joinMain">
+      <form action="thankyou.html" method="get">
+        <label for="fName">
+          First Name
+          <input
+            type="text"
+            id="fName"
+            name="fName"
+            required
+            autocomplete="given-name"
+          />
+        </label>
+
+        <label for="lName">
+          Last Name
+          <input
+            type="text"
+            name="lName"
+            id="lName"
+            required
+            autocomplete="family-name"
+          />
+        </label>
+
+        <label for="orgTitle">
+          Organizational Title
+          <input
+            type="text"
+            name="orgTitle"
+            id="orgTitle"
+            required
+            autocomplete="organization-title"
+            pattern="^[A-Za-z\- ]{7,}$"
+            title="Minimum 7 characters. Only letters, hyphens, and spaces."
+          />
+        </label>
+
+        <label for="email">
+          Email
+          <input
+            type="email"
+            required
+            name="uEmail"
+            id="email"
+            title="email address"
+            autocomplete="email"
+            placeholder="jhon123@myemail.com"
+          />
+        </label>
+
+        <label for="pNumber">
+          Phone Number
+          <input
+            type="tel"
+            required
+            name="phone"
+            id="phone"
+            autocomplete="tel"
+          />
+        </label>
+
+        <label for="orgName">
+          Organization Name
+          <input
+            type="text"
+            required
+            name="orgName"
+            id="orgName"
+            title="Add the title of your organization"
+            autocomplete="organization"
+          />
+        </label>
+
+        <!--Membership selection area-->
+        <label class="radio-group">
+          Membership Level
+          <label>
+              <input type="radio" name="membership" value="NP" />
+            NP (Non-Profit organizations)
+          </label>
+
+          <label>
+              <input type="radio" name="membership" value="bronze" />
+            Bronze Membership
+
+            <label>
+                <input type="radio" name="membership" value="silver" />
+              Silver Membership
+            </label>
+
+            <label>
+                <input type="radio" name="membership" value="gold" />
+              Gold Membership
+            </label>
+          </label>
+        </label>
+
+        <label for="description">
+          Business Description
+          <textarea
+            name="description"
+            id="description"
+            title="Describe your business"
+          ></textarea>
+        </label>
+
+        <input type="hidden" id="timestamp" name="timestamp" />
+
+        <input type="submit" value="Send Application" />
+      </form>
+
+      <section class="joinCards">
+        <article>
+            <h2>Non-Profit Membershipt Level</h2>
+            <button class="learnMoreBtn" data-level="NP">Learn More</button>
+            <dialog class="joinDialog">
+                <button class="closeModal">❌</button>
+                <div class="membershipDetails"></div>
+            </dialog>
+        </article>
+        <article>
+            <h2>Bronze Membership Level</h2>
+            <button class="learnMoreBtn" data-level="Bronze">Learn More</button>
+            <dialog class="joinDialog">
+                <button class="closeModal">❌</button>
+                <div class="membershipDetails"></div>
+            </dialog>
+        </article>
+        <article>
+            <h2>Silver Membership Level</h2>
+            <button class="learnMoreBtn" data-level="Silver">Learn More</button>
+            <dialog class="joinDialog">
+                <button class="closeModal">❌</button>
+                <div class="membershipDetails"></div>
+            </dialog>
+        </article>
+        <article>
+            <h2>Gold Membership Level</h2>
+            <button class="learnMoreBtn" data-level="Gold">Learn More</button>
+            <dialog class="joinDialog">
+                <button class="closeModal">❌</button>
+                <div class="membershipDetails"></div>
+            </dialog>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footerContainer">
+        <div class="footer-contact-info">
+          <p>Calle el pedregal</p>
+          <p>1ra interseccion, el Salvador, San Salvador</p>
+          <p>admin@wfsociety.com</p>
+          <p>503 2203-4323</p>
+        </div>
+
+        <div class="social">
+          <a href="" target="_blank"
+            ><img
+              src="./images/facebook.svg"
+              alt="Facebok"
+              width="48"
+              height="48"
+              loading="lazy"
+          /></a>
+          <a
+            href="https://github.com/BryanVasquez1006/wdd231.git"
+            target="_blank"
+            ><img
+              src="./images/github.svg"
+              alt="GitHub"
+              width="48"
+              height="48"
+              loading="lazy"
+          /></a>
+          <a href="https://www.linkedin.com/in/bryan-vasquez-58b3a2318/"
+            ><img
+              src="./images/linkedin.svg"
+              alt="LinkedIn"
+              width="48"
+              height="48"
+              loading="lazy"
+          /></a>
+        </div>
+
+        <div class="projectInfo">
+          <p>
+            © <span id="currentyear"></span> Bryan Vasquez, El Salvador, San
+            Salvador
+          </p>
+          <p id="lastModified"></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

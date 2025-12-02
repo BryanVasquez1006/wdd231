@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="Week 01 assignment" />
     <meta name="author" content="Bryan Vasquez" />
-    <meta property="og:title" content="Bryan's BYU WDD231 Website">
-    <meta property="og:description" content="Frontend developer portafolio from a BYU student">
-    <meta property="og:image" content="images/bryan-student.png">
-    <meta property="og:url" content="https://bryanvasquez1006.github.io/wdd231/">
+    <meta property="og:title" content="Bryan's BYU WDD231 Website" />
+    <meta
+      property="og:description"
+      content="Frontend developer portafolio from a BYU student"
+    />
+    <meta property="og:image" content="images/bryan-student.png" />
+    <meta
+      property="og:url"
+      content="https://bryanvasquez1006.github.io/wdd231/"
+    />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
@@ -60,12 +66,22 @@
       <section class="courseSec">
         <h2>Web Certificate Courses</h2>
         <div class="courses">
-          <button class="certificateBtn" id="allBtn">All</button>
-          <button class="certificateBtn" id="cseBtn">CSE</button>
-          <button class="certificateBtn" id="wddBtn">WDD</button>
+          <button class="certificateBtn open-button" id="allBtn">All</button>
+
+          <button class="certificateBtn open-button" id="cseBtn">CSE</button>
+          <dialog class="modalContainer" id="cseInfo">
+            <h2>CSE</h2>
+          </dialog>
+
+          <button class="certificateBtn open-button" id="wddBtn">WDD</button>
         </div>
         <div id="courseContainer" class="courseCont"></div>
         <div id="totalCredits"></div>
+
+        <dialog id="courseInfoModal" class="courseModal">
+          <button id="closeModal">❌</button>
+          <div id="courseDetails"></div>
+        </dialog>
       </section>
     </main>
 

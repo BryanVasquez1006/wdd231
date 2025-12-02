@@ -149,6 +149,7 @@ footer {
     background-color: #ccc;
     padding: 10px;
     width: 12rem;
+    cursor: pointer;
 }
 
 
@@ -190,4 +191,30 @@ section .courses {
   border: 2px solid #e74c3c; /* darker red border */
   color: #a83232;
 }
+
+
+/* MODALS CSS */
+
+.courseModal {
+    position: fixed;
+    justify-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.courseModal::backdrop {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+}
+
+#closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem; 
+}
+
 
