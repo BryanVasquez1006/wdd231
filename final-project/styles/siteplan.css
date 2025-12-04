@@ -1,0 +1,98 @@
+img {
+    width: 50rem;
+}
+
+.logo {
+    width: 60px;
+}
+
+/* ----------- Root Colors ----------- */
+:root {
+    --gold: #A8763E;
+    --cream: #F7F3E3;
+    --light-gray: #ECF0F1;
+    --wine: #6F1A07;
+    --dark: #2B2118;
+}
+
+/* ----------- Reset ----------- */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Exo 2", sans-serif;
+    background-color: var(--cream);
+    color: var(--dark);
+    line-height: 1.6;
+    padding-bottom: 3rem;
+}
+
+/* ----------- Header ----------- */
+header {
+    background-color: var(--wine);
+    color: var(--cream);
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 8px solid var(--gold);
+}
+
+header h1 {
+    font-family: "Abril Fatface", serif;
+    letter-spacing: 2px;
+}
+
+/* ----------- Main Content ----------- */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: var(--light-gray);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Headings inside main */
+main h2 {
+    font-family: "Abril Fatface", serif;
+    margin-top: 2rem;
+    color: var(--wine);
+    border-left: 6px solid var(--gold);
+    padding-left: 10px;
+}
+
+/* Paragraphs */
+main p {
+    margin: 1rem 0;
+}
+
+/* Strong tags */
+strong {
+    color: var(--gold);
+}
+
+/* Images (logo, palette, wireframe) */
+main img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+}
+
+/* Logo container */
+.logo {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.schema {
+    margin-top: 2rem;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-top: 2rem;
+    font-weight: bold;
+    color: var(--wine);
+}
