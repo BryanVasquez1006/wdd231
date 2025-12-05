@@ -678,10 +678,7 @@ form input[type="submit"]:hover {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.places-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 30px rgba(0,0,0,0.35);
-}
+
 
 /* CARD NAME */
 .card-name {
@@ -743,12 +740,6 @@ address {
   border-radius: 12px;
   cursor: pointer;
 
-  /* Smooth animation */
-  transition: 
-    background 0.25s ease, 
-    color 0.25s ease, 
-    transform 0.2s ease,
-    box-shadow 0.25s ease;
 }
 
 .card-button:hover {
