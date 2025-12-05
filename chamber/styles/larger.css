@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width: 64em) {
 
         :root {
       --dark-blue: #0B0033;
@@ -93,6 +93,21 @@
     .joinMain h1 {
         grid-row: 1/3;
     }
+
+#cardArticle {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+
+    }
+
+    .discoverMain {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    
 
 
 

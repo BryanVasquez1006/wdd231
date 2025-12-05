@@ -654,3 +654,119 @@ form input[type="submit"]:hover {
     transform: translateY(0);
   }
 }
+
+
+/* Styles for the discover page */
+
+/* CARD CONTAINER */
+.places-card {
+  display: grid;
+  grid-template-areas:
+    "title"
+    "image"
+    "caption"
+    "address"
+    "description"
+    "button";
+
+  background: var(--purple);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.places-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.35);
+}
+
+/* CARD NAME */
+.card-name {
+  color: var(--light-yellow);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  grid-area: title;
+}
+
+/* FIGURE + IMAGE */
+
+.card-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 6px;
+  object-fit: cover;
+  grid-area: image;
+}
+
+figcaption {
+  color: var(--text-light);
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  grid-area: caption;
+}
+
+address {
+  color: var(--sand);
+  font-style: normal;
+  font-size: 0.9rem;
+  grid-area: address;
+}
+
+/* DESCRIPTION */
+.card-desc {
+  color: var(--text-light);
+  margin-top: 15px;
+  line-height: 1.5;
+  font-size: 1rem;
+  grid-area: description;
+}
+
+/* BUTTON */
+.card-button {
+  grid-area: button;
+  background: var(--red);
+  color: var(--text-light);
+  border: none;
+  padding: 12px 20px;
+  width: 100%;
+  margin-top: 18px;
+
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+
+  /* Smooth animation */
+  transition: 
+    background 0.25s ease, 
+    color 0.25s ease, 
+    transform 0.2s ease,
+    box-shadow 0.25s ease;
+}
+
+.card-button:hover {
+  background: var(--sand);
+  color: var(--dark-blue);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.card-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* OPTIONAL GRID */
+#cardArticle {
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 25px;
+  padding: 20px;
+}
+

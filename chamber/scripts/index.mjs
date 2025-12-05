@@ -1,5 +1,6 @@
-import { initChamber } from "./chamber.mjs";
 
+import { initChamber } from "./chamber.mjs";
+import { places } from "./places.mjs";
 const currentWeather = document.querySelector('#current-weather');
 const weatherIcon = document.querySelector('#weather-icon');
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=13.68&lon=89.18&appid=fbc96fe3d923af47bfc682188e61e0cd&units=metric';
@@ -14,8 +15,9 @@ async function apiFetch(apiURL, callback) {
         const response = await fetch(apiURL);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+
             callback(data)
+
         } else {
 
         }
@@ -117,6 +119,8 @@ function displayBizCards(data) {
 document.addEventListener("DOMContentLoaded", () => {
     initChamber();
 });
+
+
 
 
 

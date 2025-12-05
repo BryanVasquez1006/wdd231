@@ -1,0 +1,22 @@
+@media only screen and (min-width: 38rem) {
+
+.places-card {
+  grid-template-areas:
+    "image title"
+    "image caption"
+    "image address"
+    "image description"
+    "image button";
+    align-items: center;
+    gap: 10px;
+    max-width: 600px;
+
+    }
+
+    .card-img {
+        width: 15rem;
+    }
+
+    
+
+}
