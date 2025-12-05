@@ -700,6 +700,8 @@ form input[type="submit"]:hover {
   margin-bottom: 6px;
   object-fit: cover;
   grid-area: image;
+  aspect-ratio: 3 / 2; /* same ratio as 300x200 */
+  width: 100%;
 }
 
 figcaption {

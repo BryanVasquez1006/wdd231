@@ -10,7 +10,7 @@ function createPlacesCard() {
 
         cardCont.innerHTML = `
         <h2 class="card-name">${place.name}</h2>
-        <img src="./images/${place.image}" alt="${place.name}" class="card-img" load="lazy">
+        <img src="./images/${place.image}" alt="${place.name} width="300" height="200" class="card-img" load="lazy">
         <figcaption>${place.name}</figcaption>
         <address>${place.address}</address>
         <p class="card-desc">${place.description}</p>
