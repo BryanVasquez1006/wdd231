@@ -10,7 +10,7 @@
     align-items: center;
     gap: 10px;
     max-width: 600px;
-
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
     .card-img {
