@@ -1,0 +1,52 @@
+@media only screen and (min-width: 64em) {
+
+    .largeMenuEl {
+        grid-area: headMenu;
+        display: flex;        
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .largeMenuEl ul {
+        display: flex;        
+        flex-direction: row;
+        gap: 2rem;            
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .largeMenuEl li a {
+        color: var(--beish);
+        text-decoration: none;
+    }
+
+    .largeMenuEl li a:hover {
+        color: var(--gold);
+    }
+
+    .homeMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .heroImages {
+        width: 100vw;        /* full width of the screen */
+        height: 100vh;       /* full height of the screen */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .hero1 {
+        background-image: url("../images/hero1Large.webp");
+    }
+
+    .hero2 {
+        background-image: url("../images/hero2Large.webp");
+    }
+}
+
+

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="title" content="Mr. Barberman Website" />
+    <meta name="author" content="Bryan Vasquez" />
+    <meta
+      name="description"
+      content="Experience premium haircuts, beard grooming, and exclusive membership plans at Mr. Barbershop. Modern style, expert barbers, and top-quality service."
+    />
+    <meta property="og:title" content="Mr. Barbershop SV" />
+    <meta
+      property="og:description"
+      content="Premium barbershop offering modern cuts, grooming services, and exclusive membership plans. Look sharp, feel confident, every visit."
+    />
+    <meta property="og:image" content="../images/socialMediaImage.webp" />
+    <meta property="og:url" content="pendingURL.com" />
+    <link rel="icon" href="./images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Mr. Barbershop</title>
+  </head>
+  <body>
+    <header>
+      <div class="logoContainer">
+        <img
+          src="./images/mr_barbershop_logo.webp"
+          alt="Mr. Barbershop Logo"
+          width="100"
+          height="100"
+          class="headerLogo"
+        />
+      </div>
+      <div class="weatherContainer"></div>
+      <div>
+        <button
+          aria-label="Mobile Menu"
+          id="ham-btn"
+          class="hamburger"
+        ></button>
+      </div>
+
+      <div class="largeMenuEl">
+        <ul>
+          <li><a href="./final.html">Home</a></li>
+          <li><a href="./plans.html">View Plans</a></li>
+          <li><a href="./appointment.html">Get an appointment</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <nav class="navigation" id="nav-bar">
+      <ul>
+        <li><a href="./final.html">Home</a></li>
+        <li><a href="./plans.html">View Plans</a></li>
+        <li><a href="./appointment.html">Get an appointment</a></li>
+      </ul>
+    </nav>
+    <main class="appointmentMain">
+      <section class="appointmentSection">
+        <h1>Book Your Appointment</h1>
+
+        <form class="appointmentForm" action="./thankyou.html" method="post">
+          <label>
+            Full Name
+            <input
+              type="text"
+              name="fullName"
+              required
+              placeholder="John Doe"
+            />
+          </label>
+
+          <label>
+            Email
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="example@mail.com"
+            />
+          </label>
+
+          <label>
+            Phone Number
+            <input
+              type="tel"
+              name="phone"
+              required
+              placeholder="503-0000-0000"
+            />
+          </label>
+
+          <label>
+            Choose Service
+            <select name="service" required>
+              <option value="">Select a service</option>
+              <option value="basic-cut">Basic Cut</option>
+              <option value="premium-grooming">Premium Grooming</option>
+              <option value="beard-trim">Beard Trim</option>
+              <option value="haircut-beard">Haircut + Beard</option>
+              <option value="vip-gamer">VIP Gamer Session</option>
+            </select>
+          </label>
+
+          <label>
+            Preferred Date
+            <input type="date" name="date" required />
+          </label>
+
+          <label>
+            Preferred Time
+            <input type="time" name="time" required />
+          </label>
+
+          <label>
+            Additional Notes
+            <textarea
+              name="notes"
+              rows="4"
+              placeholder="Anything we should know?"
+            ></textarea>
+          </label>
+
+          <button type="submit" class="appointmentBtn">Book Appointment</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footerContainer">
+        <div class="footer-contact-info">
+          <p>Calle el pedregal</p>
+          <p>1ra interseccion, el Salvador, San Salvador</p>
+          <p>admin@wfsociety.com</p>
+          <p>503 2203-4323</p>
+        </div>
+
+        <div class="social">
+          <a href="" target="_blank"
+            ><img
+              src="./images/facebook.svg"
+              alt="Facebok"
+              width="48"
+              height="48"
+              loading="lazy"
+          /></a>
+          <a
+            href="https://github.com/BryanVasquez1006/wdd231.git"
+            target="_blank"
+            ><img
+              src="./images/github.svg"
+              alt="GitHub"
+              width="48"
+              height="48"
+              loading="lazy"
+          /></a>
+          <a href="https://www.linkedin.com/in/bryan-vasquez-58b3a2318/"
+            ><img
+              src="./images/linkedin.svg"
+              alt="LinkedIn"
+              width="48"
+              height="48"
+              loading="lazy"
+          /></a>
+        </div>
+
+        <div class="projectInfo">
+          <p>
+            © <span id="currentyear"></span> Bryan Vasquez, El Salvador, San
+            Salvador
+          </p>
+          <p id="lastModified"></p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./scripts/final.mjs"></script>
+    <script type="module" src="./scripts/plans.mjs"></script>
+    <script src="./scripts/thankyou.mjs"></script>
+  </body>
+</html>

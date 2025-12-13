@@ -1,0 +1,368 @@
+:root {
+    --darkBrown: #1b0e04;
+    --red: #6F1A07;
+    --white: #ECF0F1;
+    --beish: #F7F3E3;
+    --gold: #A8763E;
+}
+
+a {
+    text-decoration: none;
+    color: var(--beish);
+}
+
+p, ul {
+    font-family: "Exo 2", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Abril Fatface", serif;
+}
+
+body {
+    background-color: var(--darkBrown);
+    color: var(--white);
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: 
+    "logo weather headMenu largeItems"
+    ;
+    justify-items: center;
+    align-items: center;
+    background-color: #0c0c0c;
+}
+
+main {
+    text-align: center;
+}
+
+nav ul {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    list-style: none;
+    font-weight: bolder;
+    
+}
+
+.weatherInfo {
+    grid-area: weather;
+}
+
+.navigation ul li {
+    margin: 10px;
+}
+
+
+.largeMenuEl {
+    display: none;
+    grid-area: largeItems;
+}
+
+
+/* HAMBURGER MENU */
+ 
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    grid-area: logo;
+}
+
+.headerLogo {
+    border-radius: 20px;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  width: 100%;
+  grid-area: headMenu;
+}
+
+.hamburger::before {
+  content: "\2630";
+  font-size: 2.5rem;
+}
+
+.hamburger.show::before { content: "\00D7"; }
+
+.navigation {
+    margin-top: 0;
+    display: none;
+    background-color: #0c0c0c;
+}
+
+.navigation.show {
+    display: block;
+}
+
+/*CSS FOR THE SERVICES SECTION*/
+
+.servicesContainer {
+    margin: 20px;
+}
+
+.servicesContainer article {
+    background-color: var(--beish);
+    color: #A8763E;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.services {
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.servicesContainer {
+    display: grid;
+    grid-template-areas:
+    "title"
+    "description"
+    "image"
+    "button"
+    ;
+    background-color: var(--beish);
+    color: var(--darkBrown);
+    padding: 30px;
+    justify-items: center;
+    max-width: 600px;
+    max-height: 600px;
+    border-radius: 10px;
+    
+}
+
+.servicesContainer h2 {
+    grid-area: title;
+}
+
+.servicesContainer p {
+    grid-area: description;
+}
+
+.servicesContainer button {
+    grid-area: button;
+}
+
+.servicesContainer img {
+    grid-area: image;
+}
+
+ .homeBtns {
+    background-color: var(--darkBrown);
+    color: beige;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 10rem;
+    box-shadow: 0 8px 20px var(--gold);
+    transition: background 0.3s ease, transform 0.2s ease-out;
+    cursor: pointer;
+}
+
+ .homeBtns:hover {
+    transform: scale(1.05);
+}
+
+/*CSS FOR CUSTOMER REVIEWS CARDS*/
+
+.cxReviews article {
+    background-color: var(--beish);
+    color: var(--darkBrown);
+    display: grid;
+    grid-template-areas: 
+    "image"
+    "review"
+    "comment"
+    ;
+    justify-items: center;
+    text-align: center;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.cxPortrait {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.heroImages {
+    height: 100vh;
+    background-size: cover;
+}
+
+.hero1 {
+    background-image: url("../images/mobileHero1.webp");
+}
+
+.hero2 {
+    background-image: url("../images/hero2.webp");
+    margin-bottom: 25px;
+}
+
+.footerContainer {
+    display: grid;
+    grid-template-areas: 
+    "bizInfo"
+    "socialIcons"
+    "authorInfo"
+    ;
+    text-align: center;
+    justify-items: center;
+    background-color: #0c0c0c;
+    margin-top: 40px;
+    padding: 50px;
+}
+
+.footer-contact-info {
+    grid-area: bizInfo;
+}
+
+.social {
+    grid-area: socialIcons;
+}
+
+.projectInfo {
+    grid-area: authorInfo;
+}
+
+/*STYLES FOR THE PLANS CARDS*/
+
+
+.plansContainer {
+    background-color: var(--beish);
+    color: #1b0e04;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.planPrice {
+    font-weight: bolder;
+    font-size: 4rem;
+
+}
+
+.planImg {
+    width: 200px;
+}
+
+.getPlanBtn, .moreInfo {
+    background-color: #6F1A07;
+    padding: 10px 30px;
+    border-radius: 25px;
+    transition: background 0.3s ease, transform 0.2s ease-out;
+    color: var(--beish);
+}
+
+.moreInfo {
+    border: none;
+}
+
+.getPlanBtn:hover, .moreInfo:hover {
+    transform: scale(1.05);
+    background-color: #A8763E;
+}
+
+.planPriceCont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Appointment Form Section */
+.appointmentSection {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.appointmentSection h1 {
+  font-family: "Abril Fatface", serif;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.appointmentForm {
+  max-width: 450px;
+  margin: auto;
+  padding: 25px;
+  background-color: var(--beish);
+  color: var(--darkBrown);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.appointmentForm label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  text-align: left;
+}
+
+.appointmentForm input,
+.appointmentForm select,
+.appointmentForm textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid var(--gold);
+  font-size: 1rem;
+  background-color: #fff;
+  color: var(--darkBrown);
+}
+
+.appointmentForm input:focus,
+.appointmentForm select:focus,
+.appointmentForm textarea:focus {
+  outline: none;
+  border-color: var(--red);
+  box-shadow: 0 0 8px rgba(111,26,7,0.3);
+}
+
+.appointmentBtn {
+  padding: 12px;
+  background-color: var(--red);
+  color: var(--beish);
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.appointmentBtn:hover {
+  background-color: var(--gold);
+  transform: scale(1.05);
+}
+
+    .plansMain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+
