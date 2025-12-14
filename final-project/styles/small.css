@@ -51,6 +51,7 @@ nav ul {
     
 }
 
+
 .weatherInfo {
     grid-area: weather;
 }
@@ -357,12 +358,6 @@ nav ul {
   transform: scale(1.05);
 }
 
-.plansMain {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
+
 
 
