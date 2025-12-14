@@ -12,7 +12,8 @@ async function apiFetch(apiURL) {
     const response = await fetch(apiURL);
     if (response.ok) {
       const data = await response.json();
-      displayWeather(data); // ⬅️ PASS DATA TO THE FUNCTION
+      displayWeather(data);
+      console.log(data)
     } else {
       throw Error(await response.text());
     }
