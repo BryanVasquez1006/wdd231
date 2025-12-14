@@ -357,7 +357,7 @@ nav ul {
   transform: scale(1.05);
 }
 
-    .plansMain {
+.plansMain {
         display: flex;
         flex-direction: column;
         justify-content: center;
