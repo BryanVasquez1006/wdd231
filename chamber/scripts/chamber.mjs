@@ -133,4 +133,5 @@ export function initChamber() {
   loadCompanies();
 }
 
+document.addEventListener("DOMContentLoaded", initChamber);
 
